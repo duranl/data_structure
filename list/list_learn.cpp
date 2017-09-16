@@ -6,7 +6,8 @@
  */
 
 #include <iostream>
-#include <vector>
+
+#include "vector_t"
 
 using namespace std;
 
@@ -35,7 +36,7 @@ void printCollection(const _Container &c, ostream &out = cout)
 
 void list_test()
 {
-	vector<int> vec;
+	vector_t<int> vec;
 	for (int i = 0; i < 3; i++) {
 		vec.push_back(i);
 	}
