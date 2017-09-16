@@ -4,12 +4,12 @@
  *  Created on: 2017年9月16日
  *      Author: duranl
  */
-#include <stdlib.h>
-#include <stdio.h>
+#include "list/list_learn.h"
 
 int main()
 {
-	printf("hello world!");
+	list_test();
+	// printf("hello world!");
 	return 0;
 }
 
