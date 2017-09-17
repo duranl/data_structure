@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-#include "vector_t"
+#include "vector_t.h"
 
 using namespace std;
 

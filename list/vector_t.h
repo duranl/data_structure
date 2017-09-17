@@ -9,6 +9,7 @@
 #define LIST_VECTOR_T_
 
 #include <cstdlib>
+#include <cassert>
 
 template <typename _Object>
 class vector_t
@@ -69,10 +70,12 @@ public:
 
 	_Object &operator[] (int index)
 	{
+		assert(index >= 0 && index < the_size);
 		return objects[index];
 	}
 	const _Object &operator[] (int index) const
 	{
+		assert(index >= 0 && index < the_size);
 		return objects[index];
 	}
 
@@ -98,11 +101,13 @@ public:
 
 	void pop_back()
 	{
+		assert(the_size > 0);
 		the_size--;
 	}
 
 	const _Object &back() const
 	{
+		assert(the_size > 0);
 		return objects[the_size - 1];
 	}
 
