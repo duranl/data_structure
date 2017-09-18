@@ -5,15 +5,16 @@
  *      Author: duranl
  */
 #include "list/list_learn.h"
+#include "stack/stack_learn.h"
 #include "stdio.h"
 enum f {a, b=5, c, d=10, e};
 
 int main()
 {
-	list_test();
-	enum f w;
-	printf("%d %d %d %d %d", a, b, c, d, e);
-	// printf("hello world!");
+	// list_test();
+	stack_test();
+	/*enum f w;
+	printf("%d %d %d %d %d", a, b, c, d, e);*/
 	return 0;
 }
 

@@ -105,7 +105,7 @@ public:
 		the_size--;
 	}
 
-	const _Object &back() const
+	_Object &back() const
 	{
 		assert(the_size > 0);
 		return objects[the_size - 1];
