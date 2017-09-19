@@ -19,22 +19,10 @@ private:
 
 public:
 	stack_t() { init(); }
-	stack_t(const stack_t &rhs)
-	{
-		operator=(rhs);
-	}
 
 	~stack_t()
 	{
 		delete objects;
-	}
-
-	const stack_t &operator=(const stack_t &rhs)
-	{
-		if (this != &rhs) {
-			*objects = *(rhs.objects);
-		}
-		return *this;
 	}
 
 	bool empty() const
