@@ -39,9 +39,11 @@ public:
 		objects->push_back(x);
 	}
 
-	void pop()
+	_Object pop()
 	{
+		_Object ret_val = objects->back();
 		objects->pop_back();
+		return ret_val;
 	}
 
 	_Object &top() const
